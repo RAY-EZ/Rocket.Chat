@@ -1,8 +1,6 @@
 import { Box, Button, ButtonGroup, Flex, Margins } from '@rocket.chat/fuselage';
-import React from 'react';
 
-import { useRoute } from '../../contexts/RouterContext';
-import { useTranslation } from '../../contexts/TranslationContext';
+import { useTranslation, useRoute } from '@rc/ui-contexts';
 
 function NotFoundPage() {
 	const t = useTranslation();
@@ -38,7 +36,7 @@ function NotFoundPage() {
 								404
 							</Box>
 
-							<Box role='heading' aria-level='1' fontScale='h2' color='alternative'>
+							<Box role='heading' aria-level={1} fontScale='h2' color='alternative'>
 								{t('Oops_page_not_found')}
 							</Box>
 
